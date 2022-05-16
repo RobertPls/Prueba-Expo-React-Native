@@ -11,7 +11,7 @@ export default [
         ownerAvatarurl: 'https://avatars.githubusercontent.com/u/1561955?v=4'
     },
     {
-        id: 'midudev. midu.dev',
+        id: 'midudev. midu.devs',
         fullNane: 'nidudev/nidu.dev',
         description: 'Blog de noticias sobre desarrollo',
         Language: 'HTML',
