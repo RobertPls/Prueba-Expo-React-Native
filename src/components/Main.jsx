@@ -7,7 +7,6 @@ const Main = () => {
 return (
     <View style={{mariginTop: Constants.statusBarHeight, flexgrow: 1}}>
         <Text>Rate Repository Application</Text>
-        <RepositoryList />
     </View>
 )
 }
