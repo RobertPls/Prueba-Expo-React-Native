@@ -6,23 +6,20 @@ const RepositoryStats = props => {
     return (
         <View style={{flexDirection: 'row', justifyContent:'space-around'}}>
             <View>
-            <StyledText fontWeight='bold'>Star:</StyledText>
-            <StyledText >{props.stargazersCount}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Star:</StyledText>
+            <StyledText align='center'>{props.stargazersCount}</StyledText>
             </View>
-
             <View>
-            <StyledText fontWeight='bold'>Fork:</StyledText>
-            <StyledText >{props.forksCount}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Fork:</StyledText>
+            <StyledText align='center'>{props.forksCount}</StyledText>
             </View>
-
             <View>
-            <StyledText fontWeight='bold'>Count:</StyledText>
-            <StyledText >{props.reviewCount}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Count:</StyledText>
+            <StyledText align='center'>{props.reviewCount}</StyledText>
             </View>
-
             <View>
-            <StyledText fontWeight='bold'>Average:</StyledText>
-            <StyledText >{props.ratingAverage}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Average:</StyledText>
+            <StyledText align='center'>{props.ratingAverage}</StyledText>
             </View>        
         </View>
     )
