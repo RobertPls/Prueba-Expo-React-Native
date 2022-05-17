@@ -33,7 +33,8 @@ export default function StyledText({align, children, color, fontSize, fontWeight
         color == 'primary' && styles.colorPrimary,
         color == 'secondary' && styles.colorSecondary,
         fontSize == 'subheading' && styles.suheading,
-        fontWeight == 'bold' && styles.bold
+        fontWeight == 'bold' && styles.bold,
+        style
     ]
     return(
         <Text style = {textStyles}{...restOfProps}>

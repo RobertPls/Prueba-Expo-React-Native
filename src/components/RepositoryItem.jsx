@@ -1,34 +1,21 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Image,Text, View, StyleSheet } from 'react-native';
+import RepositoryStats from './RepositoryStats.jsx';
 import StyledText from './StyleText';
+import theme from '../theme.js'
 
-const RepositoryStats = props => {
-    return (
-        <View style={{flexDirection: 'row', justifyContent:'space-around'}}>
-            <View>
-            <StyledText align='center' fontWeight='bold'>Star:</StyledText>
-            <StyledText align='center'>{props.stargazersCount}</StyledText>
-            </View>
-            <View>
-            <StyledText align='center' fontWeight='bold'>Fork:</StyledText>
-            <StyledText align='center'>{props.forksCount}</StyledText>
-            </View>
-            <View>
-            <StyledText align='center' fontWeight='bold'>Count:</StyledText>
-            <StyledText align='center'>{props.reviewCount}</StyledText>
-            </View>
-            <View>
-            <StyledText align='center' fontWeight='bold'>Average:</StyledText>
-            <StyledText align='center'>{props.ratingAverage}</StyledText>
-            </View>        
-        </View>
-    )
-}
+const RepositoryItemHeader = (props) =>(
+    <View>
+        <Image style={styles.image} source={{uri: props.ownerAvatarurl}}></Image>
+        <StyledText fontSize='subheading' fontWeight='bold' blue>{props.fullNane}</StyledText>
+        <StyledText >{props.description}</StyledText>
+        <StyledText style={styles.languaje}>{props.Language}</StyledText>
+    </View>
+)
+
 const RepositoryItem = (props) => (
     <View key={props.id} style={styles.container}>
-        <StyledText fontSize='subheading' fontWeight='bold' blue>Name: {props.fullNane}</StyledText>
-        <StyledText bold>Description: {props.description}</StyledText>
-        <StyledText blue>Languaje: {props.Language}</StyledText>
+        <RepositoryItemHeader {...props}></RepositoryItemHeader>
         <RepositoryStats {...props}></RepositoryStats>
     </View>
 )
@@ -39,6 +26,18 @@ const styles = StyleSheet.create({
         padding: 20,
         paddingBottom: 5,
         paddingTop: 5
+    },
+    languaje :{
+        padding:4,
+        color: theme.colors.white,
+        alignSelf:'flex-start',
+        backgroundColor: theme.colors.primary,
+        borderRadius: 5 
+    },
+    image: {
+        height:55,
+        width:55,
+        borderRadius: 5
     }
 })
 
