@@ -2,7 +2,7 @@ export default [
     {
         id: 'midudev. midu.dev',
         fullNane: 'nidudev/nidu.dev',
-        description: 'Blog de noticias sobre desarrollo',
+        description: 'Blog de aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanoticias sobre desarrollo',
         Language: 'HTML',
         forksCount: 3123,
         stargazersCount: 52869,
