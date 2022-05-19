@@ -33,7 +33,7 @@ const AppBar = () =>{
     const navigation = useNavigation()
     return(
         <View style = {styles.container}>
-            <AppBarTab active={true} to='/'>Repositories</AppBarTab>
+            <AppBarTab active={true} to='/list'>Repositories</AppBarTab>
             <AppBarTab active={true} to='/signin'>Sign in</AppBarTab>
         </View>
     )
