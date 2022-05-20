@@ -19,11 +19,11 @@ function DetailsScreen() {
 const Main = () => {
 return (
     <View style={{ flex: 1}}>
-        <AppBar />
-        <Stack.Navigator screenOptions = {{headerShown:false}}>
+        {/* screenOptions = {{headerShown:false}} */}
+        <Stack.Navigator >
             <Stack.Group>
-                <Stack.Screen name = 'list' component={RepositoryList}></Stack.Screen>
-                <Stack.Screen name = 'signin' component={DetailsScreen}></Stack.Screen>
+                <Stack.Screen name = 'list' component={RepositoryList} options={{ header: () => <AppBar></AppBar> }}></Stack.Screen>
+                <Stack.Screen name = 'signin' component={DetailsScreen} options={{ header: () => <AppBar></AppBar> }}></Stack.Screen>
             </Stack.Group>
         </Stack.Navigator>
     </View>
