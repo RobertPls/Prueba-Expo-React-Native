@@ -10,9 +10,9 @@ import { TouchableWithoutFeedback } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor:theme.appBar.primary,
+        backgroundColor:'red',
+        flexDirection: 'row',
         paddingTop: Constants.statusBarHeight + 10,
-        justifyContent: 'space-between'
     },
     text:{
         color : theme.appBar.textSecondary,
@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     },
     scroll:{
         paddingBottom:15,
+        margin:10
     },
     active: {
         color : theme.appBar.textPrimary,
@@ -35,10 +36,12 @@ const AppBarTab=({children, to})=>{
         active && styles.active
     ]
     return (
-        <Link to={to} style={{marginLeft:10}} component={TouchableWithoutFeedback}>
-            <StyledText fontWeight='bold' style={textSyles}>
-                {children}
-            </StyledText>
+        <Link to={to} component={TouchableWithoutFeedback}>
+            <View style={{margin: 20}}>
+                <StyledText fontWeight='bold' style={textSyles}>
+                    {children}
+                </StyledText>
+            </View>
         </Link>
     )
 }

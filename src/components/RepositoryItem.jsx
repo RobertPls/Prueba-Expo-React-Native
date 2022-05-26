@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image,Text, View, StyleSheet } from 'react-native';
+import { Image,Text, View, StyleSheet, Platform } from 'react-native';
 import RepositoryStats from './RepositoryStats.jsx';
 import StyledText from './StyleText';
 import theme from '../theme.js'
